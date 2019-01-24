@@ -36,7 +36,11 @@
 
                                 <div class="form-group">
                                     <label>Manager</label>
-                                    <input type="text" class="form-control" placeholder="Masukkan Manager Anda">
+                                    <select class="form-control">
+                                        <option disabled selected>Pilih Manager</option>
+                                        <option>Manager Aktivasi dan Pembangunan</option>
+                                        <option>Manager HAR</option>
+                                    </select>
                                 </div>
 
                                 <div class="form-group">
@@ -54,9 +58,62 @@
                                     <input type="text" class="form-control" placeholder="Masukkan App Anda">
                                 </div>
 
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Tanggal Mulai:</label>
+
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="datepicker">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Tanggal Selesai:</label>
+
+                                        <div class="input-group date">
+                                            <div class="input-group-addon">
+                                                <i class="fa fa-calendar"></i>
+                                            </div>
+                                            <input type="text" class="form-control pull-right" id="datepicker2">
+                                        </div>
+                                        <!-- /.input group -->
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        <label>Waktu Mulai:</label>
+                                        <div id="datetimepicker" class="input-append">
+                                            <input  data-format="hh:mm:ss" type="text">
+                                            <span class="add-on">
+                                              <i class="fa fa-clock-o"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label>Waktu Selesai:</label>
+                                        <div id="datetimepicker2" class="input-append">
+                                            <input data-format="hh:mm:ss" type="text">
+                                            <span class="add-on">
+                                          <i class="fa fa-clock-o">
+                                          </i>
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="form-group">
-                                    <label>Lokasi</label>
-                                    <input type="text" class="form-control" placeholder="Enter ...">
+                                    <label>Pemohon</label>
+                                    <input type="text" class="form-control" placeholder="Masukkan Nama Pemohon">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="submit" class="btn btn-block btn-primary btn-lg">
                                 </div>
 
                             </form>
@@ -67,5 +124,7 @@
             </div>
         </section>
     </div>
+
+
 
 @endsection

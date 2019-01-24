@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('/dashboard', 'PagesController@showDashboard');
 Route::get('/wp', 'PagesController@showWP');
+Route::post('/wp', 'LogicController@submitWP');

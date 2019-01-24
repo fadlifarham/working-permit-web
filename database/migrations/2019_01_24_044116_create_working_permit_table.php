@@ -23,7 +23,10 @@ class CreateWorkingPermitTable extends Migration
             $table->string('k3');
             $table->string('app');
             $table->string('pemohon');
-            $table->timestamps();
+            $table->dateTime('tgl_mulai');
+            $table->dateTime('tgl_selesai');
+            $table->time('jam_mulai');
+            $table->time('jam_selesai');
         });
     }
 
