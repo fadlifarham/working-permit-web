@@ -17,7 +17,8 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <form action="" method="" role="form">
+                            <form action="/wp" method="POST" role="form">
+                                @csrf
 
                                 <div class="form-group">
                                     <label>Uraian Pekerjaan</label>
