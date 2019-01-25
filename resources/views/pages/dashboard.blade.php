@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Dashboard | Working Permit')
+
 @section('content')
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->

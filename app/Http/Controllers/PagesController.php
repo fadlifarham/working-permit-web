@@ -13,4 +13,12 @@ class PagesController extends Controller
     public function showWP() {
         return view('pages.workingpermit');
     }
+
+    public function showLogin() {
+        return view('pages.login');
+    }
+
+    public function showRegister() {
+        return view('pages.register');
+    }
 }

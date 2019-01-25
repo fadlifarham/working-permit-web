@@ -11,10 +11,12 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
 
-Route::get('/dashboard', 'PagesController@showDashboard');
-Route::get('/wp', 'PagesController@showWP');
+Route::get('/', ['as' => 'dashboard', 'uses' => 'PagesController@showDashboard']);
+Route::get('/wp', ['as' => 'wp', 'uses' => 'PagesController@showWP']);
 Route::post('/wp', 'LogicController@submitWP');
+Route::get('/login', ['as' => 'login', 'uses' => 'PagesController@showLogin']);
+Route::get('/register', ['as' => 'register', 'uses' => 'PagesController@showRegister']);
