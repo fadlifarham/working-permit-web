@@ -1,5 +1,7 @@
 @extends('layout')
 
+@section('title', 'Form | Working Permit')
+
 @section('content')
     <div class="content-wrapper">
         <section class="content-header">
@@ -11,7 +13,7 @@
         <section class="content">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="box box-warning">
+                    <div class="box box-primary">
                         <div class="box-header with-border">
                             <h3 class="box-title">Isi Data Anda</h3>
                         </div>
