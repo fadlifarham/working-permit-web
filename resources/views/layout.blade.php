@@ -18,6 +18,7 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="{{ url('dist/css/skins/_all-skins.min.css') }}">
+    <link rel="stylesheet" href="{{ url('plugins/iCheck/all.css') }}">
   <!-- Morris chart -->
   <link rel="stylesheet" href="{{ url('bower_components/morris.js/morris.css') }}">
   <!-- jvectormap -->
@@ -28,6 +29,8 @@
   <link rel="stylesheet" href="{{ url('bower_components/bootstrap-daterangepicker/daterangepicker.css') }}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{ url('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
+
+    <link rel="stylesheet" href="{{ url('bower_components/select2/dist/css/select2.min.css ') }}">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -336,6 +339,14 @@
             autoclose: true
         })
 
+        $('#datetimepicker').datetimepicker({
+            pickDate: false
+        });
+
+        $('#datetimepicker2').datetimepicker({
+            pickDate: false
+        });
+
         //iCheck for checkbox and radio inputs
         $('input[type="checkbox"].minimal, input[type="radio"].minimal').iCheck({
             checkboxClass: 'icheckbox_minimal-blue',
@@ -364,16 +375,5 @@
     })
 </script>
 
-<script type="text/javascript">
-    $(function() {
-        $('#datetimepicker').datetimepicker({
-            pickDate: false
-        });
-
-        $('#datetimepicker2').datetimepicker({
-            pickDate: false
-        });
-    });
-</script>
 </body>
 </html>
