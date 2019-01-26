@@ -21,4 +21,8 @@ class PagesController extends Controller
     public function showRegister() {
         return view('pages.register');
     }
+
+    public function showIjinKerja() {
+        return view('pages.IjinKerja');
+    }
 }

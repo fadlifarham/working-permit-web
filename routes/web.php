@@ -20,3 +20,4 @@ Route::get('/wp', ['as' => 'wp', 'uses' => 'PagesController@showWP']);
 Route::post('/wp', 'LogicController@submitWP');
 Route::get('/login', ['as' => 'login', 'uses' => 'PagesController@showLogin']);
 Route::get('/register', ['as' => 'register', 'uses' => 'PagesController@showRegister']);
+Route::get('/ijinKerja', ['as' => 'ijinKerja', 'uses' => 'PagesController@showIjinKerja']);

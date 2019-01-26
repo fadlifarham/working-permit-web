@@ -28,6 +28,16 @@
                 </a>
             </li>
 
+            @if(Request::route()->getName() == 'ijinKerja')
+                <li class="active">
+            @else
+                <li class="">
+                    @endif
+                    <a href="/ijinKerja">
+                        <i class="fa fa-edit"></i> <span>Permohonan Ijin Kerja</span>
+                    </a>
+                </li>
+
         </ul>
     </section>
     <!-- /.sidebar -->
