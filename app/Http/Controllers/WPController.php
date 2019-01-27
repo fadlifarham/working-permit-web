@@ -26,7 +26,7 @@ class WPController extends Controller
             'is_shutdown_required' => 'required',
             'is_grounding_required' => 'required',
             'required_isolating_point' => 'required',
-            'saafety_equipment_provided_by' => 'required'
+            'safety_equipment_provided_by' => 'required'
         ]);
 
         $company = Company::findOrFail($request->input('company_id'));
@@ -52,36 +52,8 @@ class WPController extends Controller
 
         $workingPermit->save();
 
-        $data = [
-            'number' => $workingPermit->number,
-            'job_description' => $workingPermit->job_description,
-            'is_shutdown_required' => $workingPermit->is_shutdown_required,
-            'is_grounding_required' => $workingPermit->is_grounding_required,
-            'required_isolating_point' => $workingPermit->required_isolating_point,
-            'safety_equipment_provided_by' => $workingPermit->safety_equipment_provided_by,
-            'company' => $workingPermit->company->name,
-            'location' => $workingPermit->location->name,
-            'manager' => $workingPermit->manager->name,
-            'jobSupervisor' => $workingPermit->jobSupervisor->name,
-            'safetySupervisor' => $workingPermit->safetySupervisor->name
-        ];
-
-        $pdf = PDF::loadView('pages.print', $data);
+        $pdf = PDF::loadView('pages.print', compact('workingPermit'));
 
         return $pdf->download('Working-Permit.pdf');
-
-        // return view('pages.print', [
-        //     'number' => $workingPermit->number,
-        //     'job_description' => $workingPermit->job_description,
-        //     'is_shutdown_required' => $workingPermit->is_shutdown_required,
-        //     'is_grounding_required' => $workingPermit->is_grounding_required,
-        //     'required_isolating_point' => $workingPermit->required_isolating_point,
-        //     'safety_equipment_provided_by' => $workingPermit->safety_equipment_provided_by,
-        //     'company' => $workingPermit->company->name,
-        //     'location' => $workingPermit->location->name,
-        //     'manager' => $workingPermit->manager->name,
-        //     'jobSupervisor' => $workingPermit->jobSupervisor->name,
-        //     'safetySupervisor' => $workingPermit->safetySupervisor->name
-        // ]);
     }
 }

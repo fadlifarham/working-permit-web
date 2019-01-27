@@ -19,13 +19,23 @@
                         </div>
                         <!-- /.box-header -->
                         <div class="box-body">
-                            <form action="/wp" method="POST" role="form">
+                            <form action="{{ route('wp.post') }}" method="POST" role="form">
                                 @csrf
-
                                 <div class="form-group">
                                     <label>Nomor</label>
                                     <input name="number" type="text" class="form-control" placeholder="Masukkan Nomor Surat">
                                 </div>
+
+                                <div class="form-group">
+                                    <label>Perusahaan</label>
+                                    <select name="company_id" class="form-control select2" style="width: 100%;">
+                                        <option disabled selected>Pilih Perusahaan</option>
+                                        @foreach($companies as $company)
+                                        <option value={{$company->id}}>{{$company->name}}</option>
+                                        @endforeach
+                                    </select>
+                                </div>
+
 
                                 <div class="form-group">
                                     <label>Uraian Pekerjaan</label>
@@ -36,13 +46,13 @@
                                     <label>Apakah diperlukan padam</label>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="is_shutdown_required" class="" id="optionsRadios1" value="true" checked>
+                                            <input type="radio" name="is_shutdown_required" class="" id="optionsRadios1" value=1 checked>
                                             Ya
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="is_shutdown_required" class="" id="optionsRadios2" value="false">
+                                            <input type="radio" name="is_shutdown_required" class="" id="optionsRadios2" value=0>
                                             Tidak
                                         </label>
                                     </div>
@@ -52,13 +62,13 @@
                                     <label>Apakah di perlukan grounding</label>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="is_grounding_required" class="" id="optionsRadios1" value="true" checked>
+                                            <input type="radio" name="is_grounding_required" class="" id="optionsRadios1" value=1 checked>
                                             Ya
                                         </label>
                                     </div>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="is_grounding_required" class="" id="optionsRadios2" value="false">
+                                            <input type="radio" name="is_grounding_required" class="" id="optionsRadios2" value=0>
                                             Tidak
                                         </label>
                                     </div>
@@ -71,45 +81,46 @@
 
                                 <div class="form-group">
                                     <label>Alat keselamatan kerja di sediakan oleh</label>
-                                    <select name="company_id" class="form-control select2" style="width: 100%;">
-
-                                        <option selected="selected">PT Indonesia Comnet Plus</option>
-                                        <option>PT PLN Persero</option>
-                                    </select>
+                                    <input type="text" name="safety_equipment_provided_by" class="form-control" placeholder="Masukkan penyedia alat keselamatan kerja">
                                 </div>
 
                                 <div class="form-group">
                                     <label>Lokasi/Area Kerja</label>
                                     <select name="location_id" class="form-control select2" style="width: 100%;">
-                                        <option selected="selected" name="company_id">PT Indonesia Comnet Plus</option>
-                                        <option name="company_id">PT PLN Persero</option>
+                                        <option disabled selected>Pilih Lokasi</option>
+                                        @foreach($locations as $location)
+                                        <option value={{$location->id}}>{{$location->name}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Penanggung Jawab Pekerjaan</label>
-                                    <select name="manager_id" class="form-control">
+                                    <select name="manager_id" class="form-control select2">
                                         <option disabled selected>Pilih Manager</option>
-                                        <option>Manager Aktivasi dan Pembangunan</option>
-                                        <option>Manager HAR</option>
+                                        @foreach($managers as $manager)
+                                        <option value={{$manager->id}}>{{$manager->name}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Pengawas Pekerjaan</label>
-                                    <select name="job_superviser_id" class="form-control">
+                                    <select name="job_supervisor_id" class="form-control select2">
                                         <option disabled selected>Pilih Manager</option>
-                                        <option>Manager Aktivasi dan Pembangunan</option>
-                                        <option>Manager HAR</option>
+                                        @foreach($jobSupervisors as $jobSupervisor)
+                                        <option value={{$jobSupervisor->id}}>{{$jobSupervisor->name}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Pengawas K3</label>
-                                    <select name="safety_supervisor_id" class="form-control">
+                                    <select name="safety_supervisor_id" class="form-control select2">
                                         <option disabled selected>Pilih Manager</option>
-                                        <option>Manager Aktivasi dan Pembangunan</option>
-                                        <option>Manager HAR</option>
+                                        @foreach($safetySupervisors as $safetySupervisor)
+                                        <option value={{$safetySupervisor->id}}>{{$safetySupervisor->name}}</option>
+                                        @endforeach
                                     </select>
                                 </div>
 

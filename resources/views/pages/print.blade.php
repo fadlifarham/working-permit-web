@@ -1,20 +1,24 @@
-@extends('layout')
-
-@section('title', 'Print | Working Permit')
-
-@section('content')
-    <div class="content-wrapper">
-        <p>{{$number}}</p><br>
-        <p>{{$job_description}}</p><br>
-        <p>{{$is_shutdown_required}}</p><br>
-        <p>{{$is_grounding_required}}</p><br>
-        <p>{{$required_isolating_point}}</p><br>
-        <p>{{$safety_equipment_provided_by}}</p><br>
-        <p>{{$company}}</p><br>
-        <p>{{$location}}</p><br>
-        <p>{{$manager}}</p><br>
-        <p>{{$jobSupervisor}}</p><br>
-        <p>{{$safetySupervisor}}</p><br>
+<html>
+    <div>
+        <p>{{$workingPermit->number}}</p><br>
+        <p>{{$workingPermit->job_description}}</p><br>
+        <p>
+            @if($workingPermit->is_shutdown_required)
+                Ya
+            @else
+                Tidak
+            @endif</p><br>
+        <p>@if($workingPermit->is_grounding_required)
+                Ya
+            @else
+                Tidak
+            @endif</p><br>
+        <p>{{$workingPermit->required_isolating_point}}</p><br>
+        <p>{{$workingPermit->safety_equipment_provided_by}}</p><br>
+        <p>{{$workingPermit->company->name}}</p><br>
+        <p>{{$workingPermit->location->name}}</p><br>
+        <p>{{$workingPermit->manager->name}}</p><br>
+        <p>{{$workingPermit->jobSupervisor->name}}</p><br>
+        <p>{{$workingPermit->safetySupervisor->name}}</p><br>
     </div>
-
-@endsection
+</html>
