@@ -9,6 +9,7 @@
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="{{ url('bower_components/bootstrap/dist/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ url('css/bootstrap-datetimepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ url('css/index.css') }}">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{ url('bower_components/font-awesome/css/font-awesome.min.css') }}">
   <!-- Ionicons -->
