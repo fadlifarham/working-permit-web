@@ -54,6 +54,6 @@ class WPController extends Controller
 
         $pdf = PDF::loadView('pages.PrintPDF', compact('workingPermit'));
 
-        return $pdf->download('Working-Permit.pdf');
+        return $pdf->stream('Working-Permit.pdf');
     }
 }
