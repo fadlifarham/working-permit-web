@@ -23,12 +23,13 @@
                                 @csrf
                                 <div class="form-group">
                                     <label>Nomor</label>
-                                    <input name="number" type="text" class="form-control" placeholder="Masukkan Nomor Surat">
+                                    <input name="number" type="text" class="form-control" placeholder="Masukkan Nomor Surat"
+                                           required>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Perusahaan</label>
-                                    <select name="company_id" class="form-control select2" style="width: 100%;">
+                                    <select name="company_id" class="form-control select2" style="width: 100%;" required>
                                         <option disabled selected>Pilih Perusahaan</option>
                                         @foreach($companies as $company)
                                         <option value={{$company->id}}>{{$company->name}}</option>
@@ -39,14 +40,16 @@
 
                                 <div class="form-group">
                                     <label>Uraian Pekerjaan</label>
-                                    <textarea name="job_description" class="form-control" rows="3" placeholder="Masukkan Uraian Pekerjaan Anda"></textarea>
+                                    <textarea name="job_description" class="form-control" rows="3"
+                                              placeholder="Masukkan Uraian Pekerjaan Anda" required></textarea>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Apakah diperlukan padam</label>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="is_shutdown_required" class="" id="optionsRadios1" value=1 checked>
+                                            <input type="radio" name="is_shutdown_required" class="" id="optionsRadios1"
+                                                   value=1 checked>
                                             Ya
                                         </label>
                                     </div>
@@ -62,7 +65,8 @@
                                     <label>Apakah di perlukan grounding</label>
                                     <div class="radio">
                                         <label>
-                                            <input type="radio" name="is_grounding_required" class="" id="optionsRadios1" value=1 checked>
+                                            <input type="radio" name="is_grounding_required" class="" id="optionsRadios1"
+                                                   value=1 checked>
                                             Ya
                                         </label>
                                     </div>
@@ -76,12 +80,14 @@
 
                                 <div class="form-group">
                                     <label>Peralatan yag perlu di padamkan</label>
-                                    <input type="text" name="required_isolating_point" class="form-control" placeholder="Masukkan ">
+                                    <input type="text" name="required_isolating_point" class="form-control"
+                                           placeholder="Masukkan " requireds>
                                 </div>
 
                                 <div class="form-group">
                                     <label>Alat keselamatan kerja di sediakan oleh</label>
-                                    <input type="text" name="safety_equipment_provided_by" class="form-control" placeholder="Masukkan penyedia alat keselamatan kerja">
+                                    <input type="text" name="safety_equipment_provided_by" class="form-control"
+                                           placeholder="Masukkan penyedia alat keselamatan kerja" required>
                                 </div>
 
                                 <div class="form-group">
