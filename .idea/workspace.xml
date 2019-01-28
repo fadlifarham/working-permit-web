@@ -2,8 +2,109 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61c8b416-6cd3-499f-b7b9-79b900c7a585" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_27_150318_create_users_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2019_01_27_150410_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/GI mrica.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/GI.outline" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/base.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg13.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg14.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg15.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg17.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg18.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg19.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg1a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg1b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg1c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg1d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg1e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg1f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg21.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg22.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg23.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg24.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg25.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg26.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg27.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg28.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg29.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg2a.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg2b.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg2c.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg2d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg2e.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg2f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg30.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bg9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bga.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bgb.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bgc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bgd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/bgf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/compatibility.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f1.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f10.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f11.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f12.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f13.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f14.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f15.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f16.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f2.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f3.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f4.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f5.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f6.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f7.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f8.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/f9.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/fa.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/fancy.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/fb.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/fc.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/fd.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/fe.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/ff.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/topdf/theViewer.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/PDFLayout.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/auth/verify.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/pages/PrintPDF.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/CompanyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PagesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WPController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WPController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/pages/IjinKerja.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/IjinKerja.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/pages/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/pages/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,63 +132,60 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_25_044116_create_working_permits_table.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/IjinKerja.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="22" column="49" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="49" />
+            <state relative-caret-position="-1466">
+              <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+              <folding>
+                <element signature="e#1846#1866#0#HTML" expanded="true" />
+                <element signature="e#8435#8455#0#HTML" expanded="true" />
+                <element signature="e#9391#9411#0#HTML" expanded="true" />
+                <element signature="e#10355#10375#0#HTML" expanded="true" />
+                <element signature="e#11339#11359#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/PDFLayout.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/pages/IjinKerja.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/PrintPDF.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="293">
-              <caret line="89" column="106" selection-start-line="89" selection-start-column="106" selection-end-line="89" selection-end-column="106" />
+            <state relative-caret-position="488">
+              <caret line="272" lean-forward="true" selection-start-line="272" selection-end-line="272" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+        <entry file="file://$PROJECT_DIR$/resources/views/pages/print.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+            <state relative-caret-position="483">
+              <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/CompaniesTableSeeder.php">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WPController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="11" />
-              <folding>
-                <element signature="e#7#38#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="281">
+              <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/LocationsTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database/seeds/SupervisorTableSeeder.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-              <folding>
-                <element signature="e#7#38#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/public/topdf/base.min.css">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -143,6 +241,7 @@
       <find>inputmask</find>
       <find>plugins/iCheck/all.css</find>
       <find>select2</find>
+      <find>head</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -172,6 +271,10 @@
         <option value="$PROJECT_DIR$/database/seeds/ManagersTableSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/resources/views/pages/IjinKerja.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/partials/PrintPDF.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/PDFLayout.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/WPController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/PrintPDF.blade.php" />
       </list>
     </option>
   </component>
@@ -282,12 +385,36 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="NewWPOnline" type="b2602c69:ProjectViewProjectNode" />
               <item name="NewWPOnline" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewWPOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewWPOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewWPOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewWPOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewWPOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewWPOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NewWPOnline" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NewWPOnline" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NewWPOnline" type="b2602c69:ProjectViewProjectNode" />
@@ -311,7 +438,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -320,6 +446,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\NewWPOnline\public\topdf" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\NewWPOnline\resources\views\pages" />
+      <recent name="C:\xampp\htdocs\NewWPOnline\resources\views" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -357,18 +492,20 @@
       <workItem from="1548587428997" duration="123000" />
       <workItem from="1548587782372" duration="1205000" />
       <workItem from="1548589031374" duration="6055000" />
+      <workItem from="1548640252947" duration="5443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45817000" />
+    <option name="totallyTimeSpent" value="51260000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.2473525" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2473525" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5015129" side_tool="true" weight="0.3277311" />
@@ -381,7 +518,7 @@
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" visible="true" weight="0.3277311" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49848714" weight="0.3277311" />
       <window_info anchor="right" id="Database" order="0" weight="0.32980332" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -533,38 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/pages/print.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/LogicController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WPController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3542">
-          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -575,9 +684,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/CompaniesTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="299">
           <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="16" selection-end-column="11" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
@@ -587,14 +703,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/LocationsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
+        <state relative-caret-position="322">
           <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/SupervisorTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
+        <state relative-caret-position="322">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
@@ -604,7 +720,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/SafetySupervisorsTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
+        <state relative-caret-position="322">
           <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
@@ -614,7 +730,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/ManagersTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
+        <state relative-caret-position="276">
           <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
           <folding>
             <element signature="e#7#38#0#PHP" expanded="true" />
@@ -629,10 +745,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="22" selection-start-line="22" selection-end-line="22" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/pages/IjinKerja.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2047">
-          <caret line="89" column="106" selection-start-line="89" selection-start-column="106" selection-end-line="89" selection-end-column="106" />
+        <state relative-caret-position="-1466">
+          <caret line="119" column="42" selection-start-line="119" selection-start-column="42" selection-end-line="119" selection-end-column="42" />
+          <folding>
+            <element signature="e#1846#1866#0#HTML" expanded="true" />
+            <element signature="e#8435#8455#0#HTML" expanded="true" />
+            <element signature="e#9391#9411#0#HTML" expanded="true" />
+            <element signature="e#10355#10375#0#HTML" expanded="true" />
+            <element signature="e#11339#11359#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/topdf/base.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/PDFLayout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WPController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/print.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="53" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/PrintPDF.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="272" lean-forward="true" selection-start-line="272" selection-end-line="272" />
         </state>
       </provider>
     </entry>

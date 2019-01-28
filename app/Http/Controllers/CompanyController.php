@@ -7,8 +7,8 @@ use App\Company;
 
 class CompanyController extends Controller
 {
-    // public function index()
-    // {
-    //     $companies = Company::all();
-    // }
+    public function show($id)
+    {
+        $company = Company::find($id);
+    }
 }

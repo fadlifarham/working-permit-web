@@ -11,6 +11,14 @@ use App\SafetySupervisor;
 
 class PagesController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except([
+            'showLogin',
+            'showRegister'
+        ]);
+    }
+
     public function showDashboard()
     {
         return view('pages.dashboard');

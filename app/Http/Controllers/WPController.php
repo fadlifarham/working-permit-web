@@ -52,7 +52,7 @@ class WPController extends Controller
 
         $workingPermit->save();
 
-        $pdf = PDF::loadView('pages.print', compact('workingPermit'));
+        $pdf = PDF::loadView('pages.PrintPDF', compact('workingPermit'));
 
         return $pdf->download('Working-Permit.pdf');
     }

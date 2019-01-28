@@ -21,3 +21,7 @@ Route::post('/wp', ['as' => 'wp.post', 'uses' => 'WPController@store']);
 Route::get('/login', ['as' => 'login', 'uses' => 'PagesController@showLogin']);
 Route::get('/register', ['as' => 'register', 'uses' => 'PagesController@showRegister']);
 Route::get('/ijinKerja', ['as' => 'ijinKerja', 'uses' => 'PagesController@showIjinKerja']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
