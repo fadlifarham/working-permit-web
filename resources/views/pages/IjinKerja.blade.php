@@ -179,7 +179,7 @@
                                 </div>
 
                                 <div class="form-group">
-                                    <input type="submit" class="btn btn-block btn-primary btn-lg">
+                                    <input type="submit" formtarget="_blank" class="btn btn-block btn-primary btn-lg">
                                 </div>
 
                             </form>
