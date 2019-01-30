@@ -5,10 +5,10 @@
     <meta charset="utf-8"/>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <link rel="stylesheet" href="{{ url('topdf/base.min.css') }}"/>
-    <link rel="stylesheet" href="{{ url('topdf/fancy.min.css') }}"/>
-    <link rel="stylesheet" href="{{ url('topdf/main.css') }}"/>
-    <script src="{{ url('topdf/') }}"></script>
+    <link rel="stylesheet" href="topdf/base.min.css"/>
+    <link rel="stylesheet" href="topdf/fancy.min.css"/>
+    <link rel="stylesheet" href="topdf/main.css"/>
+    <script src="topdf/"></script>
     <script src="theViewer.min.js"></script>
     <script>
         try{

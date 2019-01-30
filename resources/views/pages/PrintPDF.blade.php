@@ -3,7 +3,7 @@
 @section('content')
     <div id="pf2" class="pf w0 h0" data-page-no="2">
         <div class="pc pc2 w0 h0 opened">
-            <img class="bi x0 y15 w1 h10" alt="" src="{{ url('topdf/bg2.png') }}">
+            <img class="bi x0 y15 w1 h10" alt="" src="topdf/bg2.png">
             <div class="c x1 y16 w2 h2">
                 <div class="t m0 x2 h3 y2 ff1 fs0 fc0 sc0 ls0 ws0">
                     No. Dokumen
@@ -40,7 +40,7 @@
                 <div class="t m0 x5 h12 y1b ff1 fs5 fc0 sc0 ls0 ws0">
                     PERUSAHAAN :
                     <span class="_ _4"></span>
-                    {{ $workingPermit->company->name }}
+                    <?=  $workingPermit->company->name  ?>
                 </div>
 
                 <div class="t m0 x5 h13 y1c ff3 fs5 fc0 sc0 ls0 ws0">
@@ -50,7 +50,7 @@
                 <div class="t m0 x5 h12 y1d ff1 fs5 fc0 sc0 ls0 ws0">
                     URAIAN PEKERJAAN :
                     <span class="_ _4"></span>
-                    {{ $workingPermit->job_description }}
+                    <?=  $workingPermit->job_description  ?>
                 </div>
 
                 <div class="t m0 x5 h13 y1e ff3 fs5 fc0 sc0 ls0 ws0">
@@ -64,11 +64,8 @@
 
             <div class="c x1 y20 w2 h14">
                 <div class="t m0 x4 h12 y21 ff1 fs5 fc0 sc0 ls3 ws0">
-                    @if($workingPermit->is_shutdown_required)
-                        Ya
-                    @else
-                        Tidak
-                    @endif
+                    <?= ($workingPermit->is_shutdown_required)?"Ya":"Tidak" ?>
+
                 </div>
             </div>
 
@@ -80,11 +77,8 @@
 
             <div class="c x1 y23 w2 h14">
                 <div class="t m0 x4 h13 y14 ff3 fs5 fc0 sc0 ls0 ws0">
-                    @if($workingPermit->is_shutdown_required)
-                        Ya
-                    @else
-                        Tidak
-                    @endif
+                    <?= ($workingPermit->is_shutdown_required)?"Ya":"Tidak" ?>
+
                 </div>
             </div>
 
@@ -96,11 +90,8 @@
 
             <div class="c x1 y1b w2 h14">
                 <div class="t m0 x4 h12 y14 ff1 fs5 fc0 sc0 ls3 ws0">
-                    @if($workingPermit->is_grounding_required)
-                        Ya
-                    @else
-                        Tidak
-                    @endif
+                    <?= ($workingPermit->is_grounding_required)?"Ya":"Tidak" ?>
+
                 </div>
             </div>
 
@@ -112,11 +103,8 @@
 
             <div class="c x1 y1c w2 h14">
                 <div class="t m0 x4 h13 y21 ff3 fs5 fc0 sc0 ls0 ws0">
-                    @if($workingPermit->is_grounding_required)
-                        Ya
-                    @else
-                        Tidak
-                    @endif
+                    <?= ($workingPermit->is_grounding_required)?"Ya":"Tidak" ?>
+
                 </div>
             </div>
 
@@ -124,7 +112,7 @@
                 <div class="t m0 x5 h12 y26 ff1 fs5 fc0 sc0 ls0 ws0">
                     PERALATAN YANG PERLU DIPADAMKAN :
                     <span class="_ _4"></span>
-                    {{$workingPermit->required_isolating_point}}
+                    <?= $workingPermit->required_isolating_point ?>
                 </div>
 
                 <div class="t m0 x5 h13 y27 ff3 fs5 fc0 sc0 ls0 ws0">
@@ -134,7 +122,7 @@
                 <div class="t m0 x5 h12 y28 ff1 fs5 fc0 sc0 ls0 ws0">
                     ALAT KESELAMATAN KERJA DISEDIAKAN OLEH :
                     <span class="_ _4"></span>
-                    {{$workingPermit->company->name}}
+                    <?= $workingPermit->company->name ?>
                 </div>
 
                 <div class="t m0 x5 h13 y29 ff3 fs5 fc0 sc0 ls0 ws0">
@@ -145,7 +133,7 @@
                     LOKASI/AREA KERJA :
                     <span class="_ _4"></span>
                     <span class="_ _4"></span>
-                    {{$workingPermit->location->name}}
+                    <?= $workingPermit->location->name ?>
                 </div>
                 <div class="t m0 x5 h13 y2b ff3 fs5 fc0 sc0 ls0 ws0">
                     JOB LOCATION/AREA
@@ -162,7 +150,7 @@
                 </div>
 
                 <div class="t m0 x5 h12 y2d ff1 fs5 fc0 sc0 ls0 ws0">
-                    PENANGGUNG JAWAB PEKERJAAN : {{$workingPermit->manager->name}}
+                    PENANGGUNG JAWAB PEKERJAAN : <?= $workingPermit->manager->name ?>
                     <span class="_ _7"> </span>
                     JABATAN : MANAGER
                 </div>
@@ -176,7 +164,7 @@
 
             <div class="c x1 y2f w6 h14">
                 <div class="t m0 x5 h12 y21 ff1 fs5 fc0 sc0 ls0 ws0">
-                    PENGAWAS PEKERJAAN :       {{$workingPermit->jobSupervisor->name}}
+                    PENGAWAS PEKERJAAN :       <?= $workingPermit->jobSupervisor->name ?>
                 </div>
             </div>
 
@@ -192,7 +180,7 @@
                 </div>
 
                 <div class="t m0 x5 h12 y32 ff1 fs5 fc0 sc0 ls0 ws0">
-                    PENGAWAS K3:              {{$workingPermit->safetySupervisor->name}}
+                    PENGAWAS K3:              <?= $workingPermit->safetySupervisor->name ?>
                     <span class="_ _a"> </span>
                     JABATAN : ENGINEER
                 </div>
