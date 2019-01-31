@@ -53,7 +53,9 @@ class WPController extends Controller
         $workingPermit->save();
 
         $pdf = PDF::loadView('pages.PrintPDF', compact('workingPermit'));
-
+//
         return $pdf->stream('Working-Permit.pdf');
+
+//        return view('pages.PrintPDF', compact('workingPermit'));
     }
 }

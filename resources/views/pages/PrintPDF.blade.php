@@ -1,7 +1,7 @@
 @extends('PDFLayout')
 
 @section('content')
-    <div id="pf2" class="pf w0 h0" data-page-no="2">
+    {{--<div id="pf2" class="pf w0 h0" data-page-no="2">--}}
         <div class="pc pc2 w0 h0 opened">
             <img class="bi x0 y15 w1 h10" alt="" src="topdf/bg2.png">
             <div class="c x1 y16 w2 h2">
@@ -251,10 +251,10 @@
                     Halaman
                 </div>
             </div>
-        </div>
+        {{--</div>--}}
 
-        <div class="pi" data-data="{&quot;ctm&quot;:[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}">
+        {{--<div class="pi" data-data="{&quot;ctm&quot;:[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}">--}}
 
-        </div>
+        {{--</div>--}}
     </div>
 @endsection

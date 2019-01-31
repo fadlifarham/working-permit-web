@@ -18,11 +18,11 @@
     <title></title>
 </head>
 <body>
-    <div id="sidebar">
-        <div id="outline">
-            <div id="page-container">
+    {{--<div id="sidebar">--}}
+        {{--<div id="outline">--}}
+            {{--<div id="page-container">--}}
                 @yield('content')
-            </div>
-        </div>
-    </div>
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 </body>
